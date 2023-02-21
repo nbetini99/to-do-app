@@ -1,0 +1,55 @@
+.todo-lists {
+    @apply px-6 my-5;
+
+    nav {
+        @apply space-y-1;
+    }
+
+    .nav-header {
+        @apply flex items-center justify-between;
+
+        h4 {
+            @apply font-medium py-2;
+        }
+    }
+
+    .nav-item {
+        @apply text-slate-600 hover:bg-slate-200 hover:text-slate-600 flex items-center px-3 py-1.5 text-sm font-normal rounded-md;
+
+        &.compact {
+            @apply px-1.5
+        }
+
+        .indicator {
+            @apply inline-block mr-3 h-2.5 w-2.5 flex-shrink-0 rounded-full;
+
+            &.blue {
+                @apply bg-blue-500;
+            }
+
+            &.amber {
+                @apply bg-amber-600;
+            }
+
+            &.lime {
+                @apply bg-lime-500;
+            }
+
+            &.indigo {
+                @apply bg-indigo-500;
+            }
+
+            &.cyan {
+                @apply bg-cyan-500;
+            }
+
+            &.emerald {
+                @apply bg-emerald-500;
+            }
+        }
+
+        &.selected {
+            @apply bg-slate-200 text-slate-700;
+        }
+    }
+}
